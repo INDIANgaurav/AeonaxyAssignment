@@ -30,7 +30,7 @@ const Stepper = () => {
 
 
   return (
-    <div className="w-11/12 h-1 bg-green-500 ">
+    <div >
       
       
     </div>
