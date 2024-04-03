@@ -6,6 +6,7 @@ import RightPlace from "./components/RightPlace";
 import MathLvl from "./components/MathLvl";
 import Review from "./components/Review";
 import LastPage from "./components/LastPage";
+import Success from "./components/Success";
 
 const App = () => {
   return (
@@ -31,6 +32,9 @@ const App = () => {
         } />
           <Route path="/lastpage" element={
       <LastPage/>
+        } />
+          <Route path="/success" element={
+      <Success/>
         } />
         </Routes>
       

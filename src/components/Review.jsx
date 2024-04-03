@@ -85,7 +85,7 @@ const Review = () => {
       </div>
 
       <button>
-        <NavLink to="/mathlvl">
+        <NavLink to="/success">
           <button className="bg-black   text-white font-bold py-2 px-4 border   rounded">
             Continue
           </button>

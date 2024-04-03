@@ -58,7 +58,7 @@ const MathLvl = () => {
       <p className="text-xs m-3 w-[320px]  md:w-[500px] md:ml-14">
         choose the highest level you feel confident in - you can always adjust later.
       </p>
-      <div className="grid  sm:grid-cols-2 md:grid-cols-4 m-2 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 m-2 gap-4">
         {designations.map((designation) => {
           return (
             <div className="">
