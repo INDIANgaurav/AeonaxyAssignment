@@ -65,12 +65,21 @@ const Success = () => {
     return array;
   };
 
+
+  const [isClicked, setIsClicked] = useState(null);
+
+  const handleClick = (id) => {
+    // if same li clicked again then is will reset it into normalform else border color will change accordingly
+    console.log("before", isClicked);
+    setIsClicked((prevID) => (prevID === id ? null : id));
+    console.log("after", isClicked);
+  };
   return (
     <div className="flex items-center justify-center">
       {loading ? (
         <div className="flex flex-col items-center justify-center mt-32 gap-10">
           <MoonLoader color="#d7a136" />
-          <h1 className="font-semibold">Finding learning path recommendations for you based on your responses</h1>
+          <h1 className="font-semibold text-center ml-5">Finding learning path recommendations for you based on your responses</h1>
         </div>
       ) : (
         <div className="w-[300px] lg:w-full flex flex-col items-center justify-center">
@@ -82,7 +91,14 @@ const Success = () => {
             {randomCards.map((card) => (
               <div
                 key={card.id}
-                className="relative flex items-center w-[300px] md:w-[400px] ml-8 mt-5 border p-2 rounded-md"
+                className={`relative cursor-pointer flex items-center w-[300px] md:w-[400px] ml-8 mt-5 border p-2 rounded-md
+                ${
+                    isClicked === card.id
+                      ? "border rounded-lg border-yellow-400"
+                      : ""
+                  }
+                `}
+                onClick={() => handleClick(card.id)}
               >
                 <p>
                   <span className="font-bold">{card.title}</span> {card.desc}

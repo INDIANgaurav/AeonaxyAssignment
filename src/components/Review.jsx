@@ -67,7 +67,7 @@ const Review = () => {
         <div className="w-1/2 h-[40vh] md:h-[70vh] md:mt-10 flex items-center justify-center  ">
           <img src={cheers} alt="cheer image" className="w-[250px]" />
         </div>
-        <div className="w-1/2  -mt-10  sm:mt-32 ">
+        <div className=" sm:w-[500px] -mt-10  sm:mt-32 ">
           <h1 className="text-3xl  font-bold mb-10 ">You're on your way!</h1>
 
           <Star stars={stars} />
@@ -76,9 +76,7 @@ const Review = () => {
             "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore
             quasi minima, necessitatibus est optio consequatur id nesciunt ab
             earum nam, itaque, suscipit esse illo doloribus magnam sint
-            reiciendis iste magni temporibus corrupti amet provident pariatur
-            molestiae dolorum. Consequuntur voluptate ullam vel iure minus
-            dolores reprehenderit culpa, obcaecati facilis illum veritatis!"
+            reiciendis iste magni temporibus corrupti amet provident " 
           </p>
           <span className="font-semibold">- Jacob S.</span>
         </div>
